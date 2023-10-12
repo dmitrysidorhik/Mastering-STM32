@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"001_blink\startup_stm32f103xb.o"
+"001_blink\main.o"
+"001_blink\stm32f1xx_it.o"
+"001_blink\stm32f1xx_ll_gpio.o"
+"001_blink\stm32f1xx_ll_pwr.o"
+"001_blink\stm32f1xx_ll_exti.o"
+"001_blink\stm32f1xx_ll_rcc.o"
+"001_blink\stm32f1xx_ll_utils.o"
+"001_blink\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "001_Blink\001_Blink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "001_Blink.map" -o 001_Blink\001_Blink.axf
