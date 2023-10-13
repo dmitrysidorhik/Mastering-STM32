@@ -105,10 +105,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		LL_mDelay(1000);
-		LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13);
-		LL_mDelay(1000);
-		LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_13);
+		LL_mDelay(1000); //задержка
+		LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13); //включаем светодиод (логический 0, садим на землю)
+		LL_mDelay(1000); //задержка
+		LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_13); //выключаем светодиод (логический 1, садим на 3.3)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
