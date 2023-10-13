@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"003_button_bounce\startup_stm32f103xb.o"
+"003_button_bounce\main.o"
+"003_button_bounce\stm32f1xx_it.o"
+"003_button_bounce\stm32f1xx_ll_gpio.o"
+"003_button_bounce\stm32f1xx_ll_pwr.o"
+"003_button_bounce\stm32f1xx_ll_exti.o"
+"003_button_bounce\stm32f1xx_ll_rcc.o"
+"003_button_bounce\stm32f1xx_ll_utils.o"
+"003_button_bounce\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "003_Button_bounce\003_Button_bounce.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "003_Button_bounce.map" -o 003_Button_bounce\003_Button_bounce.axf
