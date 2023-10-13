@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"004_adc\startup_stm32f103xb.o"
+"004_adc\main.o"
+"004_adc\stm32f1xx_it.o"
+"004_adc\stm32f1xx_ll_gpio.o"
+"004_adc\stm32f1xx_ll_adc.o"
+"004_adc\stm32f1xx_ll_dma.o"
+"004_adc\stm32f1xx_ll_rcc.o"
+"004_adc\stm32f1xx_ll_utils.o"
+"004_adc\stm32f1xx_ll_exti.o"
+"004_adc\stm32f1xx_ll_pwr.o"
+"004_adc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "004_ADC\004_ADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "004_ADC.map" -o 004_ADC\004_ADC.axf
