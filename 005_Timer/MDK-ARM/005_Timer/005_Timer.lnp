@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"005_timer\startup_stm32f103xb.o"
+"005_timer\main.o"
+"005_timer\stm32f1xx_it.o"
+"005_timer\stm32f1xx_ll_gpio.o"
+"005_timer\stm32f1xx_ll_pwr.o"
+"005_timer\stm32f1xx_ll_exti.o"
+"005_timer\stm32f1xx_ll_tim.o"
+"005_timer\stm32f1xx_ll_dma.o"
+"005_timer\stm32f1xx_ll_rcc.o"
+"005_timer\stm32f1xx_ll_utils.o"
+"005_timer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "005_Timer\005_Timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "005_Timer.map" -o 005_Timer\005_Timer.axf
